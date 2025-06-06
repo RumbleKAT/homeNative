@@ -5,7 +5,7 @@
 </div>
 </template>
 
-<script>
+<script lang="ts">
 import LoadingBar from '@/components/Loadingbar.vue';
 import Calendar from '../components/EventCalendar.vue';
 const groupByKey = (list, key) => list.reduce((hash, obj) => ({...hash, [obj[key]]:( hash[obj[key]] || [] ).concat(obj)}), {})

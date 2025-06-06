@@ -1,24 +1,23 @@
 # home_apply
 
+This is the frontend of HomeApply rebuilt with Vue 3, TypeScript and Vite.
+
 ## Project setup
-```
+```bash
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Start dev server
+```bash
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
+### Build for production
+```bash
 npm run build
 ```
 
-### Lints and fixes files
+### Run unit tests
+```bash
+npm test
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

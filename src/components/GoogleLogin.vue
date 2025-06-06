@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import { googleTokenLogin,googleLogout } from "vue3-google-login"
 import axios from 'axios';
 
