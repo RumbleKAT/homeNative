@@ -8,7 +8,7 @@
     </template>
     <WeeklyInfo/>
 </template>
-<script>
+<script lang="ts">
 import LoadingBar from '@/components/Loadingbar.vue';
 import WeeklyInfo from '../components/WeekyInfo.vue';
 import {mapGetters} from "vuex";

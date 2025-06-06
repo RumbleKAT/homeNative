@@ -1,14 +1,15 @@
 import { mount } from '@vue/test-utils'
 import Filter from '../src/components/Filter.vue'
 import { createStore } from 'vuex'
+import { describe, it, expect, vi } from 'vitest'
 
 const store = createStore({
   state() {
     return { category: 'APT', area: '전체' }
   },
   actions: {
-    updateCategory: jest.fn(),
-    updateArea: jest.fn()
+    updateCategory: vi.fn(),
+    updateArea: vi.fn()
   }
 })
 
@@ -20,6 +21,6 @@ describe('Filter.vue', () => {
   it('renders default category', () => {
     const wrapper = factory()
     const select = wrapper.find('select#category')
-    expect(select.element.value).toBe('APT')
+    expect((select.element as HTMLSelectElement).value).toBe('APT')
   })
 })
