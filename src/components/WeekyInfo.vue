@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script >
 import {mapActions} from "vuex";
 
 export default {

@@ -34,7 +34,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script >
 import mailElement from './MailElement.vue';
 import GoogleAuth from './GoogleLogin.vue';
 
