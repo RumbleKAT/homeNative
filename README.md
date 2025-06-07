@@ -1,6 +1,6 @@
 # home_apply
 
-This is the frontend of HomeApply rebuilt with Vue 3 and Vite.
+This is the frontend of HomeApply built with Vue 3 and Vue CLI.
 
 ## Project setup
 ```bash
@@ -9,7 +9,7 @@ npm install
 
 ### Start dev server
 ```bash
-npm run dev
+npm run serve
 ```
 
 ### Build for production
