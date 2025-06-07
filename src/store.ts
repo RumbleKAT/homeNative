@@ -12,7 +12,7 @@ const getCurrentDate = () => {
 
 const localStorage = window.localStorage;
 let storedData = [];
-let subscribe = '';
+const subscribe = '';
 
 (function (){
     if(localStorage.getItem("Events")){
