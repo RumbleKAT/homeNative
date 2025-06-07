@@ -3,7 +3,7 @@ import Main from '../views/Main.vue'
 import Today from '../views/Today.vue'
 
 const routes = [
-  { path: '/HomeApply/', component: Main },
+  { path: '/HomeApply', component: Main },
   { path: '/HomeApply/today', component: Today }
 ]
 
