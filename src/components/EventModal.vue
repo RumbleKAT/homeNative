@@ -224,7 +224,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script >
 import axios from 'axios';
 import {mapActions} from "vuex";
 
@@ -265,7 +265,7 @@ export default {
           this.$emit('close-modal');
       },
       async addDetail(){
-        const url = `${process.env.VUE_APP_API_URL}/api/home/getInfoDetail?category=${this.$store.state.category}&houseManageNo=${this.selected.HOUSE_MANAGE_NO}&pblancNo=${this.selected.PBLANC_NO}`;     
+        const url = `${import.meta.env.VITE_API_URL}/api/home/getInfoDetail?category=${this.$store.state.category}&houseManageNo=${this.selected.HOUSE_MANAGE_NO}&pblancNo=${this.selected.PBLANC_NO}`;     
         await this.fetchData(url).then(data => {
           this.selectedDetail = data
         }).catch(err=>
@@ -274,7 +274,7 @@ export default {
         // console.log(this.selectedDetail);
       },
       async getRate(){
-        const url = `${process.env.VUE_APP_API_URL}/api/home/getRateInfo?houseManageNo=${this.selected.HOUSE_MANAGE_NO}&houseSeCd=${this.selected.HOUSE_SECD}`; 
+        const url = `${import.meta.env.VITE_API_URL}/api/home/getRateInfo?houseManageNo=${this.selected.HOUSE_MANAGE_NO}&houseSeCd=${this.selected.HOUSE_SECD}`; 
         await this.fetchData(url).then(data => {
           return this.selectedRate = data
         });

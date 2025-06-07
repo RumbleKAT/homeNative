@@ -157,7 +157,7 @@ const store = createStore({
         async getData({commit}){
             // console.log(this.state.category);
             commit('setLoadingbar');            
-            return axios.get(`${process.env.VUE_APP_API_URL}/api/home/getInfo?category=${this.state.category}`).then(res =>{
+            return axios.get(`${import.meta.env.VITE_API_URL}/api/home/getInfo?category=${this.state.category}`).then(res =>{
                 const { data } = res.data;
                 commit('setLoadingbar');
                 // console.log(data);
@@ -185,7 +185,7 @@ const store = createStore({
         async getPastData({commit},data){
             commit('setLoadingbar');            
             try{
-                const res = await axios.get(`${process.env.VUE_APP_API_URL}/api/home/getInfo?category=${this.state.category}&s_date=${data.s_date}&e_date=${data.e_date}`);
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/home/getInfo?category=${this.state.category}&s_date=${data.s_date}&e_date=${data.e_date}`);
                 commit('setLoadingbar');
                 // console.log(res);
                 const result = res.data.data.map((param)=>{

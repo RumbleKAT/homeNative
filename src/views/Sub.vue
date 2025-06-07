@@ -2,7 +2,7 @@
     <MailForm/>
 </template>
 
-<script lang="ts">
+<script >
 import MailForm from '../components/MailForm.vue'
 export default {
     name : 'Sub',
